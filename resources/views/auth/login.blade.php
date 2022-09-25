@@ -48,7 +48,7 @@
 {{--</x-guest-layout>--}}
 
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -94,15 +94,23 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Login</h1>
                                 </div>
-                                <form class="user">
+                                <x-jet-validation-errors class="mb-4" />
+
+                                @if (session('status'))
+                                    <div class="mb-4 font-medium text-sm text-green-600">
+                                        {{ session('status') }}
+                                    </div>
+                                @endif
+                                <form class="user" method="POST" action="{{ route('login') }}">
+                                    @csrf
                                     <div class="form-group">
                                         <input type="email" class="form-control form-control-user"
                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                               placeholder="Digite seu endere�o de email...">
+                                               placeholder="Digite seu endereço de email..." name="email">
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control form-control-user"
-                                               id="exampleInputPassword" placeholder="Senha">
+                                               id="exampleInputPassword" placeholder="Senha"  name="password">
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small">
@@ -111,12 +119,10 @@
                                                 Me</label>
                                         </div>
                                     </div>
-                                    <a href="index.html" class="btn btn-login-primary btn-user btn-block">
-                                        Login
-                                    </a>
+                                    <input type="submit" class="btn btn-login-primary btn-user btn-block" value="Login">
                                     <hr>
                                     <a href="index.html" class="btn btn-google btn-user btn-block">
-                                        <i class="fab fa-google fa-fw"></i> Login with Google
+                                        <i class="fab fa-google fa-fw"></i> Login com Google
                                     </a>
                                     <a href="index.html" class="btn btn-facebook btn-user btn-block">
                                         <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
@@ -124,10 +130,12 @@
                                 </form>
                                 <hr>
                                 <div class="text-center">
-                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                    @if (Route::has('password.request'))
+                                        <a class="small" href="forgot-password">Esqueceu a senha?</a>
+                                    @endif
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="register.html">Create an Account!</a>
+                                    <a class="small" href="register">Nao esta está cadastrado? Cadastre-se agora!</a>
                                 </div>
                             </div>
                         </div>
