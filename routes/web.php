@@ -21,6 +21,10 @@ Route::get('/products/{id}', function ($id) {
     return view('productsdetail', ['id' => $id]);
 });
 
+Route::get('/products', function () {
+    return view('products');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
