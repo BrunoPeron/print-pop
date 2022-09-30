@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('products');
 });
 
 Route::get('/products/{id}', function ($id) {
@@ -25,12 +25,20 @@ Route::get('/products', function () {
     return view('products');
 });
 
+Route::get('/products', function () {
+    return view('products');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
+    Route::get('/products', function () {
+        return view('products');
     })->name('dashboard');
 });

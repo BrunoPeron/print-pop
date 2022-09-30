@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Shop Homepage - Start Bootstrap Template</title>
+    <title>Print&Pop</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -72,12 +72,12 @@
                     <!-- Sale badge-->
                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Promoção</div>
                     <!-- Product image-->
-                    <img src="img/batma.jpg" alt="batma" />
+                    <img src="img/dragao.jpg" alt="batma" />
                     <!-- Product details-->
                     <div class="card-body-products p-4-product">
                         <div class="text-center">
                             <!-- Product name-->
-                            <h5 class="fw-bolder">Batma</h5>
+                            <h5 class="fw-bolder">Dragao de jade</h5>
                             <!-- Product price-->
                             <span class="text-muted text-decoration-line-through">$350.00</span>
                             $250.00
@@ -88,7 +88,7 @@
                         <div class="text-center"><a class="btn-products btn-outline-dark mt-auto" href="#" style="background-color: white">Add ao carrinho</a></div>
                     </div>
                     <div class="card-footer p-4-product pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn-products btn-outline-dark mt-auto" href="#" style="background-color: white">Comprar</a></div>
+                        <div class="text-center"><a class="btn-products btn-outline-dark mt-auto" href="products/4" style="background-color: white">Comprar</a></div>
                     </div>
                 </div>
             </div>

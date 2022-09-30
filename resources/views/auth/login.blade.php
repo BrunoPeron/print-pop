@@ -1,51 +1,60 @@
-{{--<x-guest-layout>--}}
-{{--    <x-jet-authentication-card>--}}
-{{--        <x-slot name="logo">--}}
-{{--            <x-jet-authentication-card-logo />--}}
-{{--        </x-slot>--}}
-
-{{--        <x-jet-validation-errors class="mb-4" />--}}
-
-{{--        @if (session('status'))--}}
-{{--            <div class="mb-4 font-medium text-sm text-green-600">--}}
-{{--                {{ session('status') }}--}}
-{{--            </div>--}}
-{{--        @endif--}}
-
-{{--        <form method="POST" action="{{ route('login') }}">--}}
-{{--            @csrf--}}
-
-{{--            <div>--}}
-{{--                <x-jet-label for="email" value="{{ __('Email') }}" />--}}
-{{--                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />--}}
-{{--            </div>--}}
-
-{{--            <div class="mt-4">--}}
-{{--                <x-jet-label for="password" value="{{ __('Password') }}" />--}}
-{{--                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />--}}
-{{--            </div>--}}
-
-{{--            <div class="block mt-4">--}}
-{{--                <label for="remember_me" class="flex items-center">--}}
-{{--                    <x-jet-checkbox id="remember_me" name="remember" />--}}
-{{--                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>--}}
-{{--                </label>--}}
-{{--            </div>--}}
-
-{{--            <div class="flex items-center justify-end mt-4">--}}
-{{--                @if (Route::has('password.request'))--}}
-{{--                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">--}}
-{{--                        {{ __('Forgot your password?') }}--}}
-{{--                    </a>--}}
-{{--                @endif--}}
-
-{{--                <x-jet-button class="ml-4">--}}
-{{--                    {{ __('Log in') }}--}}
-{{--                </x-jet-button>--}}
-{{--            </div>--}}
-{{--        </form>--}}
-{{--    </x-jet-authentication-card>--}}
-{{--</x-guest-layout>--}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Print&Pop</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/products.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-navbar1 bg-navbar">
+    <div class="container px-4 px-lg-5-navbar">
+        <a class="navbar-brand" href="#!"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            </ul>
+            <form class="d-flex-nav">
+            </form>
+            <form class="d-flex-nav">
+                <button class="btn-products btn-outline-white" type="submit">
+                    <i></i>
+                    Print&Pop
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-navbar2 bg-navbar1" style="background-color:#5E3D2C; height:50%; padding-top: 0px; padding-bottom: 0px">
+    <div class="container px-4 px-lg-5" style="background-color:#5E3D2C;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-navbar1" style="background-color:#5E3D2C;">
+            <div class="container px-4 px-lg-5" style="background-color:#5E3D2C;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4" style="background-color:#5E3D2C;">
+                    <li class="nav-item"><a class="nav-link" href="#!" style="color:#D3BDAF">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!" style="color:#D3BDAF">Envie um modelo</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-navbar1">
+            <div class="container px-4 px-lg-5">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="#!" style="color:#D3BDAF">Conheça mais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!" style="color:#D3BDAF">Equipe</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </div>
+</nav>
+<header class="bg-nav py-2"></header>
 
 
 <!DOCTYPE html>
@@ -59,7 +68,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>Print&Pop</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
