@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/products/{id}', function ($id) {
-    return view('productsdetail', ['id' => $id]);
+    return view('productsdetail');
 });
 
 Route::middleware([

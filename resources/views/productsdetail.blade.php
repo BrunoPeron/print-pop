@@ -1,6 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Shop Homepage - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{URL::asset('css/products.css')}}" rel="stylesheet" />
+</head>
+<body>
+<!-- Navigation-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-navbar1 bg-navbar">
+        <div class="container px-4 px-lg-5-navbar">
+            <a class="navbar-brand" href="#!"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                </ul>
+                <form class="d-flex-nav">
+                    <button class="btn-products btn-outline-white" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Carrinho
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+                <form class="d-flex-nav">
+                    <button class="btn-products btn-outline-white" type="submit">
+                        <i></i>
+                        Print&Pop
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-navbar2 bg-navbar1" style="background-color:#5E3D2C; height:50%; padding-top: 0px; padding-bottom: 0px">
+        <div class="container px-4 px-lg-5" style="background-color:#5E3D2C;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-navbar1" style="background-color:#5E3D2C;">
+                <div class="container px-4 px-lg-5" style="background-color:#5E3D2C;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4" style="background-color:#5E3D2C;">
+                        <li class="nav-item"><a class="nav-link" href="#!" style="color:#D3BDAF">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!" style="color:#D3BDAF">Envie um modelo</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-navbar1">
+                <div class="container px-4 px-lg-5">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link" href="#!" style="color:#D3BDAF">Conheça mais</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!" style="color:#D3BDAF">Equipe</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </nav>
+    <div class="bg-nav py-2"></div>
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
@@ -8,56 +73,32 @@
     <title>Shop Item - Start Bootstrap Template</title>
     <!-- Bootstrap icons-->
      <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="{{URL::asset('css/productdetail.css')}}" rel="stylesheet"/>
 </head>
-<body>
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#!">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">All Products</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                        <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <button class="btn btn-outline-dark" type="submit">
-                    <i class="bi-cart-fill me-1"></i>
-                    Cart
-                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                </button>
-            </form>
-        </div>
-    </div>
-</nav>
+
+{{--</header>--}}
 <!-- Product section-->
-<section class="py-5">
+{{--<section class="py-5">--}}
     <div class="container px-4 px-lg-5 my-5">
         <div class="row gx-4 gx-lg-5 align-items-center">
             <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
             <div class="col-md-6">
                 <div class="small mb-1">SKU: BST-498</div>
-                <h1 class="display-5 fw-bolder">Shop item template</h1>
+                <h1 class="display-5 fw-bolder">Dragao de jade</h1>
                 <div class="fs-5 mb-5">
                     <span class="text-decoration-line-through">$45.00</span>
                     <span>$40.00</span>
                 </div>
                 <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
-                <div class="d-flex">
+                <div class="d-flex" style="margin-top: 220px">
                     <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                    <button class="btn btn-outline-dark flex-shrink-0" type="button" style="margin-right: 30px">
+                        <i class="bi-cart-fill me-1"></i>
+                        Adicionar ao carrinho
+                    </button>
                     <button class="btn btn-outline-dark flex-shrink-0" type="button">
                         <i class="bi-cart-fill me-1"></i>
-                        Add to cart
+                        Comprar
                     </button>
                 </div>
             </div>
@@ -177,5 +218,4 @@
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-</body>
 </html>
