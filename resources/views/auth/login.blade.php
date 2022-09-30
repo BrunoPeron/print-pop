@@ -98,7 +98,7 @@
                                     <div class="form-group">
                                         <input type="email" class="form-control form-control-user"
                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                               placeholder="Digite seu endereço de email...">
+                                               placeholder="Digite seu endereï¿½o de email...">
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control form-control-user"
