@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id()->autoIncrement();
             $table->char('name', '20')->nullable(false);
             $table->text('description')->nullable(false);
+            $table->text('imgname')->nullable(false)->default('');
+            $table->text('valuediscont')->nullable(false)->default('');
             $table->double('value')->nullable(false);
         });
     }
